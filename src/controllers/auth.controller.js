@@ -28,7 +28,7 @@ router.post("/signup", async (req, res) => {
         if(await pushdata(signupdata)){
             res.send("sign up sucess")
         }else{
-            res.send({message : "Somthing went wrong plz try again"})
+            res.send({message : "Somthing went wrong"})
         }
        }else{
         res.send({message : "The user already exist"})
